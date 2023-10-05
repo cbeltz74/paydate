@@ -9,7 +9,9 @@ export const Calculator = () => {
                 const nextPayDate = new Date();
                 const lastPayDate = new Date('2023-09-01');
                 const timeDifference = Math.abs(lastPayDate - nextPayDate);
+                console.log(timeDifference);
                 const daysLeft = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+                console.log(daysLeft);
                 setDaysLeft(daysLeft);
             };
 
